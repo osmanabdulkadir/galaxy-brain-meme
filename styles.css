@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+.wrapper{
+    display: flex;
+    max-width: 1170px;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+
+}
+.header{
+    font-size: 1rem;
+    display: inline;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 1rem;
+
+}
+.brains{
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    
+}
+
+.brain{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 2rem; 
+    margin: 5rem 2rem;
+    
+    
+}
+#purple-brain{
+    border: 1px solid rgb(170, 13, 231) 
+}
+
+.img{
+    position: relative;
+    margin-top: -4rem;
+    margin-bottom: 3rem;
+    margin-left: .5rem;
+
+}
+.price{
+    font-size: 1.8rem;
+    margin-top: -2rem;
+    margin-left: 2rem;
+}
+
+.level{
+    font-size: 1rem;
+    font-weight: 900;
+    margin: 1rem 0rem 1rem 1rem;
+}
+
+.paragraph{
+    color: gray;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.list{
+    display: block;
+    margin: 1rem 7rem 2rem 1rem;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    width: fit-content;
+    font-weight: 800;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+}
+#yes{
+    color: green;
+}
+
+.popular{
+    position: relative;
+    background-color: rgb(170, 13, 231);
+    color: white;
+    border: 1px solid purple;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    height: 2rem;
+    width: 10rem;
+}
+
+@media screen and (min-width: 760px) {
+    .brains{
+        width: 30rem;
+    }
+    .price{
+        font-size: 2.5rem;
+    }
+    .img{
+        margin-left: 5rem;
+        
+    }
+    .paragraph{
+        padding: 1rem;
+    }
+    
+}
+@media screen and (min-width: 1100px) {
+    .wrapper{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .brains{
+        flex-direction: row;
+        width: 100vw;
+        line-height: 1.3rem;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    .price{
+        font-size: 1.6rem;
+    }
+    .img{
+        margin-left: 1rem;
+    }
+    .list{
+        display: inline;
+        font-size: 1.2rem;
+    }
+    
+}
